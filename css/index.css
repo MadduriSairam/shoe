@@ -1,0 +1,699 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+.shoe-card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.shoe-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.shoe-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.shoe-button:hover {
+  background: black;
+  color: white;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(245, 242, 242);
+  color: black;
+  transition: right 0.3s ease-in-out;
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+.sidebar a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.sidebar a:hover {
+  background-color: #222;
+  color: white;
+}
+.show-sidebar {
+  right: 0;
+}
+.marquee-container {
+  position: relative;
+  width: 100%;
+  height: 35px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background-color: #000;
+  white-space: nowrap;
+}
+
+.marquee-wrapper {
+  display: flex;
+  align-items: center;
+  min-width: 200%; 
+  animation: scrollTextLeft 15s linear infinite;
+}
+
+.marquee-wrapper.reverse {
+  animation: scrollTextRight 15s linear infinite;
+}
+
+.marquee-wrapper div {
+  display: flex;
+  align-items: center;
+  gap: 40px; 
+}
+
+.scroll-item {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+
+@keyframes scrollTextLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollTextRight {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.marquee-wrapper h1 {
+  text-transform: uppercase;
+  color: #fec74f;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.marquee-container:hover .marquee-wrapper {
+  animation-play-state: paused;
+}
+
+.flower-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.stickycontainer1 {
+  position: relative;
+  min-height: 150vh; 
+  padding: 50px 0;
+  background: url("../images/mainimg.avif") no-repeat center center /
+    cover;
+  background-attachment: fixed;
+  transition: background-position 0.1s ease-out; 
+}
+
+.stickcontainer {
+  position: relative;
+  min-height: 150vh; 
+  padding: 50px 5%;
+  background: url("../images/thirdsectionimg.avif") no-repeat;
+  background-size: cover; 
+  background-position: center center; 
+  background-attachment: fixed;
+}
+
+.stickycontainer {
+  position: relative;
+  min-height: 150vh;
+  padding: 50px 0; 
+  background: url("../images/secongmainimg.avif") no-repeat center
+    center/cover;
+  background-attachment: fixed;
+  transition: background-position 0.1s ease-out; 
+}
+
+.sticky-container img {
+  display: none;
+}
+
+.text-overlay {
+  max-width: 50%;
+  padding: 20px;
+}
+.text-overlay h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.text-overlay h2 {
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  text-transform: capitalize;
+}
+
+.text-overlay button {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  border-radius: 40px;
+}
+
+.text-overlay button:hover {
+  background-color: #ff9900;
+}
+.shoe-box {
+  position: absolute;
+  right: 6%;
+  bottom: 1%;
+  background: #f2f1e6;
+  padding: 15px;
+  width: 30%;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.shoe-boxs {
+  background: rgba(94, 72, 45, 0.9);
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 40%;
+}
+@media (max-width: 1024px) {
+  .shoe-boxs {
+    max-width: 90%;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shoe-boxs {
+    max-width: 95%;
+    bottom: 5px;
+  }
+}
+.shoe-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.shoe-boxs h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.shoe-boxs p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.shoe-boxs button {
+  margin-top: 1rem;
+  background: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.shoe-boxs button:hover {
+  background: #ff9900;
+}
+
+@media (max-width: 1024px) {
+  .stickcontainer {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .text-overlay {
+    max-width: 100%;
+  }
+
+  .text-overlay h1 {
+    font-size: 3rem;
+  }
+
+  .shoe-boxs {
+    max-width: 90%;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-overlay h1 {
+    font-size: 2.5rem;
+  }
+
+  .text-overlay h2 {
+    font-size: 1.2rem;
+  }
+
+  .shoe-boxs h1 {
+    font-size: 1.2rem;
+  }
+
+  .shoe-boxs p {
+    font-size: 0.9rem;
+  }
+
+  .shoe-boxs {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .text-overlay h2 {
+    font-size: 1rem;
+  }
+
+  .shoe-boxs h1 {
+    font-size: 1rem;
+  }
+
+  .shoe-boxs p {
+    font-size: 0.8rem;
+  }
+}
+
+.shoe-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.shoe-price {
+  font-size: 1rem;
+  color: #ff6600;
+  margin: 5px 0;
+}
+
+.add-to-cart {
+  font-weight: 700;
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background: #ff9900;
+}
+#best-sellers {
+  padding: 40px 0;
+}
+
+.shoe-card {
+  background: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.shoe-card:hover {
+  transform: scale(1.05);
+}
+
+.shoe-img-container {
+  position: relative;
+  width: 100%;
+  height: 350px; 
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.shoe-img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: 50% 50%;
+}
+
+.shoe-img-container:hover .front {
+  opacity: 0;
+}
+.reviews-section {
+  width: 90%;
+  max-width: 1200px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.reviews-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.reviews-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.reviews-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 200%;
+}
+
+.review-card {
+  flex: 0 0 48%; 
+  min-width: 48%;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  min-height: 220px; 
+  box-sizing: border-box;
+  margin: 0 15px;
+  word-wrap: break-word; 
+  white-space: normal; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review-card.black {
+  background-color: black;
+  color: white;
+}
+
+.review-card.white {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.review-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.review-card p {
+  font-size: 16px; 
+  margin-bottom: 20px;
+  line-height: 1.5;}
+
+.review-card .reviewer-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+swiper-container {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+  }
+  
+  swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  swiper-slide img {
+    width: 150px; 
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  swiper-slide img:hover {
+    transform: scale(1.1); 
+  }
+  
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+@media (max-width: 1024px) {
+  .reviews-section {
+    width: 95%;
+  }
+
+  .review-card {
+    flex: 0 0 90%;
+    min-width: 90%;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .prev {
+    left: 5px;
+  }
+
+  .next {
+    right: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .review-card {
+    flex: 0 0 100%;
+    min-width: 100%;
+    padding: 20px;
+  }
+
+  .reviews-title {
+    font-size: 24px;
+  }
+
+  .review-card h3 {
+    font-size: 18px;
+  }
+
+  .review-card p {
+    font-size: 14px;
+  }
+}
+
+.shoe-img-container:hover .back {
+  opacity: 1;
+}
+.shoe-card {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background: #f9f9f9;
+  transition: transform 0.3s ease-in-out;
+}
+
+.shoe-card:hover {
+  transform: scale(1.05);
+}
+
+.shoe-image {
+  width: 100%; 
+  height: 280px; 
+  object-fit: fill; 
+  border-radius: 10px;
+}
+
+.shoe-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.shoe-button:hover {
+  background: black;
+  color: white;
+}
+
+.shoe-details {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.shoe-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.shoe-price {
+  font-size: 1rem;
+  color: #ff6600;
+  margin-top: 5px;
+}
+
+.front {
+  opacity: 1;
+  position: relative; 
+}
+
+.back {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.shoe-img-container:hover .front {
+  opacity: 0;
+}
+
+.shoe-img-container:hover .back {
+  opacity: 1;
+}
+
+.best-seller-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff6600;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  z-index: 5; 
+}
+.view-all-btn {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  color: #000;
+}
+
+.view-all-btn:hover {
+  background-color: #ff9900;
+  color: #000;
+  box-shadow: 0px 4px 8px rgba(255, 204, 0, 0.3);
+}
+.cursor {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+}
+.sidebar a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar a:hover {
+  background-color: #222;
+  color: white;
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.show {
+  max-height: 200px; 
+}

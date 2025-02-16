@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOEX</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../css/index.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="cursor"></div>
+    </div>
+    <section class="marquee-container">
+      <div class="marquee-wrapper">
+        <div class="">
+          <h1>Free Shipping on all intl. orders over $50</h1>
+          <h1>Free Shipping on all intl. orders over $50</h1>
+          <h1>Free Shipping on all intl. orders over $50</h1>
+          <h1>Free Shipping on all intl. orders over $50</h1>
+          <h1>Free Shipping on all intl. orders over $50</h1>
+        </div>
+        <div>
+          <h1>Free Shipping on all intl. orders over $50</h1>
+          <h1>Free Shipping on all intl. orders over $50</h1>
+          <h1>Free Shipping on all intl. orders over $50</h1>
+          <h1>Free Shipping on all intl. orders over $50</h1>
+          <h1>Free Shipping on all intl. orders over $50</h1>
+        </div>
+      </div>
+    </section>
+    <header class="">
+      <nav
+        class="container mx-auto px-4 py-3 flex items-center justify-between"
+      >
+        <div>
+          <h1 class="text-2xl font-bold text-gray-900">ShoeX.</h1>
+        </div>
+
+        <div class="relative md:w-auto">
+          <span
+            class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <input
+            type="search"
+            name="search"
+            id="searchItem"
+            placeholder="Search..."
+            class="pl-12 pr-4 py-2 border border-gray-300 rounded-full focus:outline-none w-full md:w-96 lg:w-[400px] xl:w-[500px] mx-auto"
+          />
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span
+            class="text-gray-700 text-xl cursor-pointer hover:text-[#ff9900]"
+          >
+            <i class="fa-solid fa-heart"></i>
+          </span>
+
+          <span
+            class="text-gray-700 text-xl cursor-pointer hover:text-[#ff9900]"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>
+          </span>
+          <button
+            class="text-black border border-gray-300 font-bold focus:outline-none px-6 md:px-10 py-2 rounded-lg transition w-auto block"
+            onclick="window.location.href='../html/login.html'"
+          >
+            Login
+          </button>
+          <button
+            id="menuBtn"
+            class="bg-black text-white px-6 md:px-10 py-2 rounded-lg hover:bg-[#ff9900] transition w-auto block"
+          >
+            Menu
+          </button>
+        </div>
+      </nav>
+    </header>
+    <div id="sidebar" class="sidebar p-4">
+      <a
+        href="javascript:void(0)"
+        id="closeBtn"
+        class="text-right pr-4 text-xl"
+      >
+        &times;
+      </a>
+      <a href="../html/index.html">
+        <i class="fa-solid fa-house pr-2"></i> Home
+      </a>
+      <a href="#ContactUs">
+        <i class="fa-solid fa-phone pr-2"></i> Contact Us
+      </a>
+      <a href="#About"> <i class="fa-solid fa-user pr-2"></i> About Us </a>
+      <div class="relative">
+        <a
+          href="javascript:void(0)"
+          id="shopToggle"
+          class="flex items-center justify-between"
+        >
+          <span><i class="fa-solid fa-store pr-2"></i> Shop</span>
+          <i
+            class="fa-solid fa-chevron-down transition-transform"
+            id="arrowIcon"
+          ></i>
+        </a>
+
+        <div id="shopDropdown" class="dropdown-content">
+          <a href="#"><i class="fa-solid fa-box pr-2"></i> All Products</a>
+          <a href="#"><i class="fa-solid fa-person pr-2"></i>Men</a>
+          <a href="#"><i class="fa-solid fa-person-dress pr-2"></i> Women</a>
+          <a href="#"><i class="fa-solid fa-child-reaching pr-2"></i> Kids</a>
+        </div>
+      </div>
+    </div>
+
+    <section id="mainSection" class="stickycontainer1">
+      <div class="text-overlay">
+        <h1>Step-up Your Stride</h1>
+        <h2>Premium Athletic Footwear</h2>
+        <button>Shop Now</button>
+      </div>
+      <div class="shoe-box">
+        <img
+          src="../images/getsartedpage1.webp"
+          alt="Shoe Image"
+          class="shoe-image"
+        />
+        <h3 class="shoe-name">Nike Air Zoom</h3>
+        <p class="shoe-price">$129.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </section>
+    <section id="best-sellers" class="container mx-auto my-10 px-4">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-3xl font-bold">BEST SELLERS</h2>
+        <a
+          href="#"
+          class="view-all-btn border border-gray-300 rounded-full focus:outline-none"
+          >View All</a
+        >
+      </div>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      >
+        <div class="shoe-card">
+          <div class="shoe-img-container">
+            <span class="best-seller-label">Best Seller</span>
+            <img
+              src="../images/getsartedpage1.webp"
+              alt="Shoe Front"
+              class="shoe-img front"
+            />
+            <img
+              src="../images/getstarted2.webp"
+              alt="Shoe Back"
+              class="shoe-img back"
+            />
+          </div>
+          <div class="shoe-details">
+            <h3 class="shoe-name">Nike Air Zoom</h3>
+            <p class="shoe-price">$129.99</p>
+          </div>
+        </div>
+        <div class="shoe-card">
+          <div class="shoe-img-container">
+            <span class="best-seller-label">Best Seller</span>
+            <img
+              src="../images/getstarted3.webp"
+              alt="Shoe Front"
+              class="shoe-img front"
+            />
+            <img
+              src="../images/getstarted4.webp"
+              alt="Shoe Back"
+              class="shoe-img back"
+            />
+          </div>
+          <div class="shoe-details">
+            <h3 class="shoe-name">Nike Air Zoom</h3>
+            <p class="shoe-price">$129.99</p>
+          </div>
+        </div>
+        <div class="shoe-card">
+          <div class="shoe-img-container">
+            <span class="best-seller-label">Best Seller</span>
+            <img
+              src="../images/getstarted5.webp"
+              alt="Shoe Front"
+              class="shoe-img front"
+            />
+            <img
+              src="../images/getsartedpage1.webp"
+              alt="Shoe Back"
+              class="shoe-img back"
+            />
+          </div>
+          <div class="shoe-details">
+            <h3 class="shoe-name">Nike Air Zoom</h3>
+            <p class="shoe-price">$129.99</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="mainSection" class="stickycontainer">
+      <div class="text-overlay">
+        <h1>20% Off<br />Kids Styles</h1>
+        <h2>Exclusive, one-time offer</h2>
+        <button>Shop Now</button>
+      </div>
+      <div class="shoe-box">
+        <img
+          src="../images/getsartedpage1.webp"
+          alt="Shoe Image"
+          class="shoe-image"
+        />
+        <h3 class="shoe-name">Nike Air Zoom</h3>
+        <p class="shoe-price">$129.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </section>
+    <section class="marquee-container">
+      <div class="marquee-wrapper">
+        <div class="scroll-group">
+          <div class="scroll-item">
+            <img
+              src="../images/flowerdesign.png"
+              alt="Flower"
+              class="flower-icon"
+            />
+            <h1>New Energy, Same High Quality</h1>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="../images/flowerdesign.png"
+              alt="Flower"
+              class="flower-icon"
+            />
+            <h1>New Energy, Same High Quality</h1>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="../images/flowerdesign.png"
+              alt="Flower"
+              class="flower-icon"
+            />
+            <h1>New Energy, Same High Quality</h1>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="../images/flowerdesign.png"
+              alt="Flower"
+              class="flower-icon"
+            />
+            <h1>New Energy, Same High Quality</h1>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="../images/flowerdesign.png"
+              alt="Flower"
+              class="flower-icon"
+            />
+            <h1>New Energy, Same High Quality</h1>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="../images/flowerdesign.png"
+              alt="Flower"
+              class="flower-icon"
+            />
+            <h1>New Energy, Same High Quality</h1>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="../images/flowerdesign.png"
+              alt="Flower"
+              class="flower-icon"
+            />
+            <h1>New Energy, Same High Quality</h1>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="../images/flowerdesign.png"
+              alt="Flower"
+              class="flower-icon"
+            />
+            <h1>New Energy, Same High Quality</h1>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="../images/flowerdesign.png"
+              alt="Flower"
+              class="flower-icon"
+            />
+            <h1>New Energy, Same High Quality</h1>
+          </div>
+        </div>
+
+        <div class="scroll-group">
+          <div class="scroll-item">
+            <img
+              src="../images/flowerdesign.png"
+              alt="Flower"
+              class="flower-icon"
+            />
+            <h1>New Energy, Same High Quality</h1>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="../images/flowerdesign.png"
+              alt="Flower"
+              class="flower-icon"
+            />
+            <h1>New Energy, Same High Quality</h1>
+          </div>
+          <div class="scroll-item">
+            <img
+              src="../images/flowerdesign.png"
+              alt="Flower"
+              class="flower-icon"
+            />
+            <h1>New Energy, Same High Quality</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="selection2 h-fit" id="RunningShoeStore">
+      <h1 class="md:text-[30vw] text-[15vw]">ShopByCollection.</h1>
+    </section>
+    <section class="shop-by-collection container mx-auto my-16 px-4">
+      <h2 class="text-3xl font-bold mb-8">SHOP BY COLLECTION</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6"
+      >
+        <!-- Collection Card 1 -->
+        <div class="shoe-card">
+          <img
+            src="../images/getstarted5.webp"
+            alt="Shoe Image"
+            class="shoe-image"
+          />
+          <button class="shoe-button">PREFERENCE SERIES</button>
+        </div>
+
+        <!-- Collection Card 2 -->
+        <div class="shoe-card">
+          <img
+            src="../images/getsartedpage1.webp"
+            alt="Shoe Image"
+            class="shoe-image"
+          />
+          <button class="shoe-button">LIMITED EDITION</button>
+        </div>
+
+        <!-- Collection Card 3 -->
+        <div class="shoe-card">
+          <img
+            src="../images/getstarted2.webp"
+            alt="Shoe Image"
+            class="shoe-image"
+          />
+          <button class="shoe-button">WOMEN</button>
+        </div>
+
+        <!-- Collection Card 4 -->
+        <div class="shoe-card">
+          <img
+            src="../images/getstarted3.webp"
+            alt="Shoe Image"
+            class="shoe-image"
+          />
+          <button class="shoe-button">MEN</button>
+        </div>
+
+        <!-- Collection Card 5 -->
+        <div class="shoe-card">
+          <img
+            src="../images/getstarted4.webp"
+            alt="Shoe Image"
+            class="shoe-image"
+          />
+          <button class="shoe-button">KIDS</button>
+        </div>
+      </div>
+    </section>
+    <section id="mainSection" class="stickcontainer relative">
+      <div class="text-overlay">
+        <h1>Committed<br />to Sustainability</h1>
+        <h2>Exclusive, one-time offer</h2>
+        <button>Shop Now</button>
+      </div>
+
+      <div class="shoe-boxs absolute bottom-5 sm:right-5 sm:w-[40%] p-6">
+        <h1>WALK WITH US TOWARDS A GREENER PLANET, ONE STEP AT A TIME</h1>
+        <h3 class="shoe-name">
+          I'm a paragraph. Click here to add your own text and edit me. It’s
+          easy. Just click “Edit Text” or double-click me to add your own
+          content and make changes to the font. I’m a great place for you to
+          tell a story and let your users know a little more about you.
+        </h3>
+        <button class="add-to-cart font-bold">Read More</button>
+      </div>
+    </section>
+    <section class="my-16 px-4">
+      <h1 class="text-3xl font-bold mb-8 pl-[30px]">Our Best Brands</h1>
+      <div class="">
+        <swiper-container
+          class="mySwiper"
+          pagination="true"
+          pagination-clickable="true"
+          slides-per-view="3"
+          space-between="30"
+          free-mode="true"
+        >
+          <swiper-slide
+            ><img src="../images/adidas logo.webp" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/Puma-Logo.png" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/Clarks-Original-Logo.png" alt="" class=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/Columbia-logo.png" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/Logo Birkenstock.png" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/New-Balance-Logo.png" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/Converse-Logo-.png" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/DC-Shoes-Logo.png" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/ecco_logo.png" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/Reebok-logo.jpg" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/fila-logo.jpeg" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/geox_logo.png" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/hoka_one_one___logo.jpg" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/lacoste-brand-logo.jpg" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/Merrell_logo.png" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/mizuno-logo.webp" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/Nike logo.jpg" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/salomon-logo.png" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/SAUCONY_LOGO.jpg" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/SKECHERS-Logo-.jpg" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/steve_madden_logo.png" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/Timberland-logo.jpg" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/toms-logo.png" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/Under-Armour-logo.png" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/Vans-logo.png" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/Crocs_Logo.jpg" alt=""
+          /></swiper-slide>
+          <swiper-slide
+            ><img src="../images/Dr__Martens-logo.png" alt=""
+          /></swiper-slide>
+        </swiper-container>
+      </div>
+    </section>
+    <section class="reviews-section text-3xl font-bold mb-8 my-16 px-4">
+      <h2 class="reviews-title pl-[30px]">CUSTOMER REVIEWS</h2>
+
+      <div class="reviews-container p-[50px]">
+        <div class="reviews-wrapper" id="reviewsWrapper">
+          <div class="review-card black">
+            <h3>“ECO-FRIENDLY AND DURABLE”</h3>
+            <p>“I'm a review. This is a great shoe for sustainability.”</p>
+            <span class="reviewer-name">John Doe</span>
+          </div>
+
+          <div class="review-card white">
+            <h3>“PERFECT FOR URBAN RUNNERS”</h3>
+            <p>“Great for running in the city! Highly recommended.”</p>
+            <span class="reviewer-name">Sarah Smith</span>
+          </div>
+
+          <div class="review-card black">
+            <h3>“EXCELLENT CUSHIONING”</h3>
+            <p>“Very comfortable and stylish. Worth the price.”</p>
+            <span class="reviewer-name">Michael Johnson</span>
+          </div>
+
+          <div class="review-card white">
+            <h3>“LIGHTWEIGHT & FLEXIBLE”</h3>
+            <p>“Feels like walking on clouds, love it!”</p>
+            <span class="reviewer-name">Emma Brown</span>
+          </div>
+
+          <div class="review-card black">
+            <h3>“DURABLE & STYLISH”</h3>
+            <p>“Good for casual and gym wear. Would buy again.”</p>
+            <span class="reviewer-name">David Lee</span>
+          </div>
+
+          <div class="review-card white">
+            <h3>“PERFECT FOR GYM”</h3>
+            <p>“Provides good grip and comfort during workouts.”</p>
+            <span class="reviewer-name">Olivia Wilson</span>
+          </div>
+
+          <div class="review-card black">
+            <h3>“VALUE FOR MONEY”</h3>
+            <p>“Great quality for the price. Very satisfied.”</p>
+            <span class="reviewer-name">James Anderson</span>
+          </div>
+
+          <div class="review-card white">
+            <h3>“BEST SHOES FOR HIKING”</h3>
+            <p>“I used these for a hiking trip. Super comfortable!”</p>
+            <span class="reviewer-name">Sophia Martinez</span>
+          </div>
+
+          <div class="review-card black">
+            <h3>“SUPERIOR ARCH SUPPORT”</h3>
+            <p>“Perfect for long walks. Keeps my feet pain-free.”</p>
+            <span class="reviewer-name">Chris Evans</span>
+          </div>
+
+          <div class="review-card white">
+            <h3>“LOVED BY MY KIDS”</h3>
+            <p>“Bought for my son, and he absolutely loves it.”</p>
+            <span class="reviewer-name">Emily Clarke</span>
+          </div>
+        </div>
+
+        <button class="arrow next" onclick="nextSlide()">&#8250;</button>
+      </div>
+    </section>
+    <section class="p-[50px]" id="About">
+      <div class="grid sm:grid-cols-2 gap-[30px] p-[50px]">
+        <div class="row-span-2 shadow-md shadow-black">
+          <img
+            src="../images/getsartedpage1.webp"
+            alt=""
+            class="choose-img h-full"
+          />
+        </div>
+        <div>
+          <h1 class="font-extrabold text-[60px]">About Us</h1>
+          <p class="py-[20px] text-[25px]">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate,
+            harum sapiente illo modi unde, culpa qui minus ab tempora corrupti,
+            laudantium minima earum dicta suscipit delectus magnam quis rerum
+            ducimus.
+          </p>
+          <button
+            class="bg-black text-white px-[30px] py-[10px] rounded-[40px] font-bold hover:bg-[#ff9900]"
+          >
+            Order Now
+          </button>
+        </div>
+        <div class="shadow-md shadow-black w-[100%]">
+          <img src="../images/getstarted2.webp" alt="" class="choose-img" />
+        </div>
+      </div>
+    </section>
+    <section class="relative" id="ContactUs">
+      <div>
+        <img
+          src="../images/thirdsectionimg.avif"
+          alt=""
+          class="w-screen object-fill h-[640px]"
+        />
+      </div>
+
+      <div
+        class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-50"
+      >
+        <section>
+          <div class="flex items-center justify-center">
+            <div
+              class="flex flex-col items-center px-[50px] absolute"
+              id="loginform"
+            >
+              <div>
+                <h1 class="text-[50px] font-extrabold p-[10px]">
+                  Get In Touch
+                </h1>
+              </div>
+              <div class="py-[20px]">
+                <span class="relative">
+                  <i class="ri-user-line absolute py-[10px] pl-3"></i>
+                  <input
+                    type="text"
+                    placeholder="Username"
+                    class="sm:w-[500px] pl-10 pr-4 py-3 rounded-md outline-none border-2 border-gray-300 focus:border-black text-black"
+                  />
+                </span>
+              </div>
+              <div>
+                <span class="relative">
+                  <i class="ri-lock-line absolute py-[10px] pl-3"></i>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="sm:w-[500px] pl-10 pr-4 py-3 rounded-md outline-none border-2 border-gray-300 focus:border-black text-black"
+                  />
+                </span>
+              </div>
+              <div class="py-[20px] flex justify-center">
+                <textarea
+                  placeholder="Message"
+                  class="w-full sm:w-[400px] md:w-[500px] min-h-[150px] pl-10 pr-4 py-3 rounded-md outline-none border-2 border-gray-300 focus:border-black text-black resize-y"
+                ></textarea>
+              </div>
+
+              <div class="pt-[20px] pb-[10px]">
+                <button
+                  class="sm:w-[500px] w-[200px] text-[20px] px-5 py-3 rounded-[40px] font-bold bg-black text-white hover:bg-[#ff9900]"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <footer class="bg-black text-white py-10 mt-[20vh]">
+      <div class="container mx-auto px-4">
+        <div
+          class="bg-[#F2F1E5] p-6 rounded-lg text-black text-center max-w-3xl mx-auto"
+        >
+          <h2 class="text-xl font-semibold">
+            Stay updated, sign up to receive exclusive updates and offers
+          </h2>
+          <form class="mt-4">
+            <label for="email" class="block text-sm font-medium">EMAIL *</label>
+            <input
+              type="email"
+              id="email"
+              class="w-full p-2 border border-gray-400 rounded-md mt-1 focus:outline-none focus:ring-2 focus:ring-black"
+              placeholder="Enter your email"
+              required
+            />
+            <div class="flex items-center mt-2">
+              <input type="checkbox" id="subscribe" class="mr-2" />
+              <label for="subscribe" class="text-sm"
+                >Yes, subscribe me to your newsletter.</label
+              >
+            </div>
+            <button
+              type="submit"
+              class="mt-4 bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition w-full"
+            >
+              SUBMIT
+            </button>
+          </form>
+        </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10 text-center md:text-left"
+        >
+          <div>
+            <h3 class="bg-white text-black font-semibold py-2 rounded-md">
+              CONTACT
+            </h3>
+            <ul class="mt-2 space-y-2">
+              <li class="bg-gray-800 p-2 rounded-md">info@shoex.com</li>
+              <li class="bg-gray-800 p-2 rounded-md">9000312865</li>
+              <li class="bg-gray-800 p-2 rounded-md">Surat</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="bg-white text-black font-semibold py-2 rounded-md">
+              LEGAL
+            </h3>
+            <ul class="mt-2 space-y-2">
+              <li class="bg-gray-800 p-2 rounded-md">Terms & Conditions</li>
+              <li class="bg-gray-800 p-2 rounded-md">Privacy Policy</li>
+              <li class="bg-gray-800 p-2 rounded-md">Shipping Policy</li>
+              <li class="bg-gray-800 p-2 rounded-md">Refund Policy</li>
+              <li class="bg-gray-800 p-2 rounded-md">
+                Accessibility Statement
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="bg-white text-black font-semibold py-2 rounded-md">
+              SHOP
+            </h3>
+            <ul class="mt-2 space-y-2">
+              <li class="bg-gray-800 p-2 rounded-md">All Products</li>
+              <li class="bg-gray-800 p-2 rounded-md">Best Sellers</li>
+              <li class="bg-gray-800 p-2 rounded-md">Performance Series</li>
+              <li class="bg-gray-800 p-2 rounded-md">Limited Edition</li>
+              <li class="bg-gray-800 p-2 rounded-md">Kids Collection</li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center mt-10">
+          <h3
+            class="bg-white text-black font-semibold py-2 rounded-md inline-block px-4"
+          >
+            SOCIAL MEDIA
+          </h3>
+          <div class="flex justify-center gap-4 mt-4">
+            <button class="bg-gray-800 px-4 py-2 rounded-md">Instragram</button>
+            <button class="bg-gray-800 px-4 py-2 rounded-md">Facebook</button>
+            <button class="bg-gray-800 px-4 py-2 rounded-md">Twitter</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
